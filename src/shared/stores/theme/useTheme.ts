@@ -6,7 +6,7 @@ interface Theme{
 }
 
 export const useTheme=create<Theme>((set:any)=>({
-    whiteMode:true,
+    whiteMode:false,
 
     toggleWhiteMode:()=>{
         set((state:any) => ({
