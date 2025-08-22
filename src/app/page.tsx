@@ -1,12 +1,9 @@
-"use client"
-import {useTheme} from "@/shared/stores/theme/useTheme";
+import {MainPage} from "@/pages/main/main-page";
 
 export default function Home() {
-    const { whiteMode } = useTheme();
 
     return (
-        <div className={`${whiteMode ? "bg-[#E6E6E6] text-[#2D8AFC]" : "bg-[#2B2B29] text-[#FF5D00]"} h-auto min-h-screen w-full`}>
- hello
-        </div>
+        <MainPage/>
+
   );
 }
